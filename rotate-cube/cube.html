@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转的立方体</title>
+    <style>
+        #platform {
+            perspective: 800px;
+            -webkit-perspective: 800px;
+            perspective-origin: 50% 50%;
+            -webkit-perspective-origin: 50% 50%;
+        }
+
+        #cube {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            margin: 200px auto;
+            -webkit-animation: scroll 8s linear infinite;
+            -o-animation: scroll 8s linear infinite;
+            animation: scroll 8s linear infinite;
+        }
+
+        .face {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 200px;
+            opacity: 0.5;
+        }
+
+        #one {
+            background-color: #10a6ce;
+        }
+
+        #two {
+            background-color: #0073b3;
+            transform-origin: right;
+            -webkit-transform-origin: right;
+            -webkit-transform: rotateY(-90deg);
+            -moz-transform: rotateY(-90deg);
+            -ms-transform: rotateY(-90deg);
+            -o-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+        }
+
+        #three {
+            background-color: #07beea;
+            transform-origin: left;
+            -webkit-transform-origin: left;
+            -webkit-transform: rotateY(90deg);
+            -moz-transform: rotateY(90deg);
+            -ms-transform: rotateY(90deg);
+            -o-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+        }
+
+        #four {
+            background-color: #29B4F0;
+            transform-origin: top;
+            -webkit-transform-origin: top;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -ms-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        }
+
+        #five {
+            background-color: #6699cc;
+            transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            -ms-transform: rotateX(90deg);
+            -o-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+        }
+
+        #six {
+            background-color: #10a6ce;
+            -webkit-transform: translateZ(-200px);
+            -moz-transform: translateZ(-200px);
+            -ms-transform: translateZ(-200px);
+            -o-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+        }
+
+        @-webkit-keyframes scroll {
+            0% {
+                -webkit-transform: rotateY(0deg) rotateX(0deg);
+            }
+            100% {
+                -webkit-transform: rotateY(360deg) rotateX(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="platform">
+    <div id="cube">
+        <div id="one" class="face">1</div>
+        <div id="two" class="face">2</div>
+        <div id="three" class="face">3</div>
+        <div id="four" class="face">4</div>
+        <div id="five" class="face">5</div>
+        <div id="six" class="face">6</div>
+    </div>
+</div>
+</body>
+</html>

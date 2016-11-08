@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <style>
+        #content {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #canvas {
+            border: 1px solid gray;
+        }
+
+        #dead-hint {
+            color: red;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body onload="Snake.game.init()">
+    <div id="content">
+        <h1>贪吃蛇大作战</h1>
+        <p>分数：<span id="score">0</span></p>
+        <p id="play-hint">玩法说明：按方向键操作蛇的移动</p>
+        <p id="dead-hint">挂掉了！按空格键重新开始</p>
+        <canvas id="canvas" width="800px" height="600px" tabindex="-1"></canvas>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
