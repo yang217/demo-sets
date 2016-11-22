@@ -1,0 +1,29 @@
+/* 取出 inline-block 之间的空格参考： http://demo.doyoe.com/css/inline-block-space/*/
+#container {
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.row {
+    margin-top: 10px;
+    /* 解决 inline-block 之间的空格 */
+    font-size: 0;
+    /* 针对 IE7 下的 hack */
+    word-spacing: -1px;
+}
+
+.elem {
+    margin-left: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.elem:hover {
+    background-color: deepskyblue;
+}
