@@ -1,0 +1,46 @@
+.container {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 400px;
+    height: 300px;
+    border: 3px solid green;
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.container1 .child {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.container2 {
+    line-height: 300px;
+    text-align: center;
+}
+
+.container2 .child {
+    /* 需要复盖父 div 的 line-height */
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container3 {
+    position: relative;
+}
+
+.container3 .child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container4 {
+    display: inline-flex;
+}
+
+.container4 .child {
+    margin: auto;
+}
