@@ -1,0 +1,44 @@
+div {
+    display: inline-block;
+    margin: 20px;
+}
+
+.tube {
+
+    width: 20px;
+    height: 20px;
+    border: 50px solid;
+    border-color: deeppink deepskyblue teal wheat;
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 200px solid teal;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+
+    border-top: 50px solid deeppink;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid wheat;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid deepskyblue;
+}
