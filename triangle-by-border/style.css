@@ -3,13 +3,29 @@ div {
     margin: 20px;
 }
 
-.tube {
-
+.tube1 {
     width: 20px;
     height: 20px;
     border: 50px solid;
     border-color: deeppink deepskyblue teal wheat;
 }
+
+.tube2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: deeppink deepskyblue transparent transparent;
+}
+
+.rectangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 100px 0;
+    border-color: deeppink deepskyblue teal transparent;
+}
+
 .arrow-up {
     width: 0;
     height: 0;
@@ -41,4 +57,12 @@ div {
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
     border-right: 60px solid deepskyblue;
+}
+
+.another-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: deeppink transparent transparent transparent;
 }

@@ -6,4 +6,5 @@
 - [九宫格](grid-3by3/)
 - [旋转的立方体](rotate-cube/)
 - [贪吃蛇](snake/)
-
+- [元素竖直居中](center-elem/)
+- [css border 实现正方体和三角形](triangle-by-border/)
