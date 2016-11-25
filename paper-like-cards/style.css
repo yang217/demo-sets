@@ -1,0 +1,23 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.card .head {
+    background-color: darkseagreen;
+    color: white;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.card .container {
+    color: gray;
+    padding: 20px;
+}
+
+.card .img-head {
+    width: 300px;
+    height: 300px;
+}

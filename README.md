@@ -8,3 +8,4 @@
 - [贪吃蛇](snake/)
 - [元素竖直居中](center-elem/)
 - [css border 实现正方体和三角形](triangle-by-border/)
+- [paper card 实现](paper-like-cards/)
