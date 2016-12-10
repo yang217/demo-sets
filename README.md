@@ -4,6 +4,7 @@
 
 ## [图像轮播](img-slide/)
 ![轮播效果图](http://ww3.sinaimg.cn/large/006y8lVajw1fam3a7whpog30sa0aj4qz.gif)
+重点在于通过 JavaScript 控制图片的显示与否，同时利用 CSS3 的过渡与动画让切换过程不单调。
 
 ## [拖放元素](drag-drop/)
 说明有待补充
