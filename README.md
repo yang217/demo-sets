@@ -3,7 +3,7 @@
 这个项目用来存放平时写的各个 demo，目录如下（按时间排序）：
 
 ## [图像轮播](img-slide/)
-![轮播效果图](http://urlc.cn/xAEcj3)
+![轮播效果图](./img-slide/recording.gif)
 重点在于通过 JavaScript 控制图片的显示与否，同时利用 CSS3 的过渡与动画让切换过程不单调。
 
 ## [拖放元素](drag-drop/)
