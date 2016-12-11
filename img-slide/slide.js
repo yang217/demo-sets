@@ -9,13 +9,10 @@ var imgSlide = (function () {
     var next = null;
     var length = 0;
     var currentIndex = 0;
+    var clicked = false;
+    var interval = 1500;
 
-    var dotHelper = function (i) {
-        return function () {
-            showSlide(i);
-        };
-    };
-    var init = function (slidesClass, dotsClass, prevId, nextId) {
+    var init = function (slidesClass, dotsClass, prevId, nextId, newInterval) {
         var i;
         // init attributes
         slides = document.getElementsByClassName(slidesClass);
@@ -29,9 +26,21 @@ var imgSlide = (function () {
             dots[i].addEventListener('click', dotHelper(i));
         }
         slides[0].style.display = 'block';
+        dots[0].className += ' active';
         // add click listeners to arrays
         prev.addEventListener('click', showPrev);
         next.addEventListener('click', showNext);
+        // set loop
+        interval = newInterval ? newInterval : interval;
+        clicked = true;
+        loop();
+    };
+    var dotHelper = function (i) {
+        // used to set event listener to dot
+        return function (event) {
+            clicked = true;
+            showSlide(i);
+        };
     };
     var showSlide = function (n) {
         slides[currentIndex].style.display = 'none';
@@ -41,10 +50,21 @@ var imgSlide = (function () {
         currentIndex = n;
     };
     var showNext = function (event) {
+        clicked = true;
         showSlide(currentIndex === length - 1 ? 0 : currentIndex + 1);
     };
     var showPrev = function (event) {
+        clicked = true;
         showSlide(currentIndex === 0 ? length - 1 : currentIndex - 1);
+    };
+    var loop = function () {
+        if (clicked) {
+            clicked = false;
+        }
+        else {
+            showNext();
+        }
+        setTimeout(loop, interval);
     };
     return {
         'init': init
