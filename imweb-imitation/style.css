@@ -21,8 +21,7 @@ header {
   display: inline-block;
   width: 60%;
   margin: 1em;
-  -ms-text-align-last: right;
-  text-align-last: right; }
+  text-align: right; }
 
 #logo {
   float: left; }
@@ -32,18 +31,145 @@ header {
   #nav li {
     display: inline-block;
     list-style: none; }
-  #nav a {
-    text-decoration: none;
-    color: black;
-    margin: 0.5em;
-    transition: color ease 0.3s; }
-  #nav a:hover {
-    color: #2189f8; }
 
 .z-active {
   color: #3372a2 !important; }
 
-::selection {
+#site-head {
+  background-color: #77bffb;
+  margin-bottom: 5rem;
+  color: white; }
+
+.container {
+  display: flex;
+  min-height: 420px; }
+
+.vertical {
+  margin: auto; }
+  .vertical h1 {
+    margin: 10px 0;
+    font-size: 3.2em;
+    text-shadow: 0 0 5px black; }
+  .vertical h2 {
+    font-size: 1.4em;
+    text-shadow: 0 0 5px black; }
+    .vertical h2 button {
+      padding: 0.6em 1.2em;
+      border: 1px white solid;
+      border-radius: 0.4em;
+      color: white;
+      background-color: transparent;
+      font-size: 75%;
+      cursor: pointer;
+      outline: none; }
+      .vertical h2 button:hover {
+        background-color: rgba(0, 0, 0, 0.2); }
+
+.team-description {
+  width: 60%;
+  margin: auto;
+  line-height: 2.4rem; }
+
+#latest-articles {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+
+.section-title {
+  font-size: 2.4rem;
+  text-align: center; }
+
+.post {
+  display: inline-table;
+  width: 30%;
+  margin: 1em; }
+
+.post-header {
+  text-align: left; }
+
+.post-meta {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: #9eabb3;
+  display: inline-block; }
+  .post-meta a {
+    color: #9eabb3;
+    margin: 0; }
+
+.post-title {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  margin: 0; }
+  .post-title a {
+    margin: 0;
+    color: #3372a2; }
+
+.post-excerpt p {
+  font-size: 0.8em;
+  text-align: left;
+  margin: 1.6rem 0 0 0; }
+.post-excerpt a {
+  margin: 0; }
+
+@media only screen and (max-width: 1300px) {
+  .post {
+    width: 80%;
+    border-bottom: 1px #d9d9d9 dashed; } }
+@media only screen and (max-width: 950px) {
+  #logo, .large-screen {
+    display: none !important; }
+
+  #header-nav {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #77bffb;
+    border-bottom: 1px white dashed; }
+
+  #nav {
+    width: 100%;
+    margin: 0.5em; }
+
+  .nav-tab {
+    width: 24%;
+    margin: auto; }
+    .nav-tab a {
+      color: white; }
+
+  .container {
+    min-height: 320px; }
+
+  .vertical h1 {
+    font-size: 4rem; }
+  .vertical h2 {
+    font-size: 2rem; }
+
+  .team-description, #latest-articles {
+    width: 90%; }
+
+  .post {
+    width: 100%; } }
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0.5em;
+  transition: color ease 0.3s;
+  cursor: pointer; }
+
+a:hover {
   color: #2189f8; }
+
+hr {
+  margin: 3.2rem 0;
+  display: block;
+  border: 0;
+  border-top: 1px #efefef solid; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  line-height: 1.2em; }
+
+ul {
+  -webkit-padding-start: 0; }
 
 /*# sourceMappingURL=style.css.map */
