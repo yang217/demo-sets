@@ -34,10 +34,6 @@ header {
 
 #nav {
   display: inline-block;
-  li {
-    display: inline-block;
-    list-style: none;
-  }
 }
 
 .z-active {
@@ -101,7 +97,7 @@ header {
 .post {
   display: inline-table;
   width: 30%;
-  margin: 1em;
+  padding-right: 1em;
 }
 
 .post-header {
@@ -140,59 +136,53 @@ header {
   }
 }
 
-@media only screen and (max-width: 1300px) {
-  .post {
-    width: 80%;
-    border-bottom: 1px #d9d9d9 dashed;
+#project-show {
+  width: 100%;
+  font-size: 0;
+  margin-bottom: 2rem;
+}
+
+.project-section{
+  width: 25%;
+  height: 10rem;
+  background-color: #e8e8e8;
+  border: 2px white solid;
+  box-sizing: border-box;
+}
+
+footer {
+  font-size: 1.3rem;
+}
+
+#footer-logo {
+  display: flex;
+  padding: 1.5em;
+  background-color: #4d4e4e;
+  color: #bbc7cc ;
+  ul {
+    margin: auto;
+  }
+  li {
+    margin: 0 0.5em;
+  }
+  a {
+    color: #bbc7cc;
+  }
+  a:hover {
+    color: #2189f8;
   }
 }
 
-@media only screen and (max-width: 950px) {
-  #logo, .large-screen {
-    display: none !important;
-  }
+#inner {
+  padding: 1em;
+  background-color: #414242;
+  display: flex;
+}
 
-  #header-nav {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    background-color: #77bffb;
-    border-bottom: 1px white dashed;
-  }
-
-  #nav {
-    width: 100%;
-    margin: 0.5em;
-  }
-
-  .nav-tab {
-    width: 24%;
-    margin: auto;
-    a {
-      color: white;
-    }
-  }
-
-  .container {
-    min-height: 320px;
-  }
-
-  .vertical {
-    h1 {
-      font-size: 4rem;
-    }
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
-  .team-description, #latest-articles{
-    width: 90%;
-  }
-
-  .post {
-    width: 100%;
-  }
+#copyright {
+  margin: auto;
+  text-align: center;
+  color: #818282;
 }
 
 a {
@@ -221,4 +211,83 @@ h1, h2, h3, h4, h5 {
 
 ul {
   -webkit-padding-start: 0;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .post {
+    width: 80%;
+    border-bottom: 1px #d9d9d9 dashed;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #logo, .large-screen {
+    display: none !important;
+  }
+
+  #header-nav {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #77bffb;
+    border-bottom: 1px white dashed;
+  }
+
+  #nav {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .nav-tab {
+    width: 24%;
+    box-sizing: border-box;
+    margin: 0;
+    a {
+      color: white;
+    }
+  }
+
+  .container {
+    min-height: 320px;
+  }
+
+  .vertical {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .team-description{
+    width: 90%;
+  }
+
+  #latest-articles {
+
+  }
+
+  .post {
+    width: 100%;
+  }
+
+  .project-section {
+    width: 100%;
+  }
+
+  #footer-logo li {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical h1 {
+    font-size: 3.5rem;
+  }
 }
