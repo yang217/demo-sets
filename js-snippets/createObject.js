@@ -5,7 +5,7 @@
 
 var factoryModel = function () {
     "use strict";
-    var hint = "工厂模式： 通过函数 createperson 来封装具体的细节";
+    var hint = "工厂模式： 通过函数 createPerson 来封装具体的细节";
     var createPerson = function (name) {
         var o = {};
         o.name = name;
@@ -103,10 +103,11 @@ var parasiticModel = function () {
 
 var durableModel = function () {
     "use strict";
-    var hint = "稳妥构造函数模式： 与工程模式类似，但是不定义属性，而是使用私有变量，从而服务从外部访问这些变量";
-    var createPerson = function (name) {
+    var hint = "稳妥构造函数模式： 与工程模式类似，但是不定义属性，而是使用私有变量，从而禁止从外部访问这些变量";
+    var createPerson = function (p_name) {
         var o = {};
         // 可以在此处定义私有变量
+        var name = p_name;
         o.sayName = function () {
             console.log(name);
         };
