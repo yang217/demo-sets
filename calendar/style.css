@@ -1,0 +1,55 @@
+body {
+  font-family: Verdana, sans-serif; }
+
+div {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+li {
+  display: inline-block;
+  color: white; }
+
+.container {
+  width: 800px;
+  margin: auto; }
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background-color: #1abc9c;
+  text-align: center;
+  font-size: 20px; }
+  .month .year {
+    display: block;
+    margin-top: 10px; }
+
+.weekdays {
+  background-color: #ddd; }
+  .weekdays ul {
+    justify-content: space-around; }
+  .weekdays li {
+    padding: 8px;
+    color: #666; }
+
+.days {
+  background-color: #eee; }
+  .days ul {
+    justify-content: space-around; }
+  .days li {
+    width: 20px;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+    color: #777; }
+  .days .active {
+    background-color: #1abc9c;
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */
