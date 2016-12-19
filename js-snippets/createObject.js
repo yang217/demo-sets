@@ -103,7 +103,7 @@ var parasiticModel = function () {
 
 var durableModel = function () {
     "use strict";
-    var hint = "稳妥构造函数模式： 与工程模式类似，但是不定义属性，而是使用私有变量，从而禁止从外部访问这些变量";
+    var hint = "稳妥构造函数模式： 与工厂模式类似，但是不定义属性，而是使用私有变量，从而禁止从外部访问这些变量";
     var createPerson = function (p_name) {
         var o = {};
         // 可以在此处定义私有变量
