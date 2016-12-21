@@ -1,0 +1,96 @@
+@charset "utf-8";
+.container {
+  width: 200px;
+  margin: auto;
+}
+
+button {
+  display: block;
+  width: 150px;
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+.press-btn {
+  background-color: #4caf50;
+  border-radius: 15px;
+  box-shadow: 0 9px #777;
+  margin-bottom: 19px;
+  &:hover {
+    background-color: darken(#4caf50, 10%);
+  }
+  &:active {
+    // 通过颜色的改变和位移模拟按钮被按下的效果
+    box-shadow: 0 5px darken(#777, 10%);
+    background-color: darken(#4caf50, 10%);
+    transform: translateY(4px);
+  }
+}
+
+.hover-btn {
+  text-align: center;
+  background-color: tomato;
+  border-radius: 4px;
+  // 利用 :after 过渡实现动画效果
+  span {
+    position: relative;
+    display: inline-block;
+    padding-right: 0;
+    transition: 0.5s;
+    &:after {
+      content: '\00bb';
+      opacity: 0;
+      position: absolute;
+      right: -20px;
+      transition: 0.5s;
+    }
+  }
+  &:hover span{
+    padding-right: 20px;
+    &:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+}
+
+.ripple-btn {
+  // 利用 :after 动画实现波纹效果（不是特别完美）
+  background-color: deepskyblue;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 30%;
+    top: -50%;
+    left: -10%;
+    padding: 40% 60%;
+    background-color: lighten(deepskyblue, 20%);
+    opacity: 0.6;
+    visibility: hidden;
+    transform: scale(0);
+  }
+  &:not(:active):after {
+    animation: ripple 0.5s;
+  }
+  &:focus:after {
+    visibility: visible;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

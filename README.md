@@ -1,6 +1,7 @@
 # 样例小集合
 
 这个项目用来存放平时写的各个 demo，目录如下（按时间排序）：
+- [动态按钮](http://leonard-peng.github.io/demos/animate-buttons/)
 - [扁平风格日历](http://leonard-peng.github.io/demos/calendar)
 - [图像轮播](http://leonard-peng.github.io/demos/img-slide/)
 - [拖放元素](http://leonard-peng.github.io/demos/drag-drop/)
