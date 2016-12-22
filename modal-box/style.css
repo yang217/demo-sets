@@ -1,0 +1,58 @@
+button {
+  width: 150px;
+  height: 100px;
+  margin: 1rem;
+  font-size: 1.5rem;
+  background-color: #1abc9c;
+  color: white;
+  outline: none;
+  border: none; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  width: 40%;
+  padding: 20px;
+  border: 1px solid #888; }
+
+.wrapper {
+  text-align: center; }
+
+.close {
+  width: 80px;
+  height: 30px;
+  font-size: 1rem; }
+
+.close:hover, .close:focus {
+  cursor: pointer;
+  background-color: #148f77; }
+
+.entire-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  width: 40%; }
+
+.modal-header, .modal-footer {
+  padding: 2px 16px;
+  background-color: #4caf50;
+  color: white; }
+
+.modal-body {
+  padding: 2px 20px; }
+  .modal-body .close {
+    border: 1px black solid;
+    background-color: white;
+    color: black; }
+
+/*# sourceMappingURL=style.css.map */

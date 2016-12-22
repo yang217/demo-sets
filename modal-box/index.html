@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="demo1">
+    <button id="btn1">朴素的弹窗</button>
+    <div class="plain-modal modal" id="modal1">
+      <div class="modal-content">
+        <p>hhhh，很开心见到你~(￣▽￣)~*</p>
+        <div class="wrapper">
+          <button class="close" id="close-btn1">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo2">
+    <button id="btn2">更完整的弹窗</button>
+    <div class="entire-modal modal" id="modal2">
+      <div class="entire-modal-content">
+        <div class="modal-header">
+          <p>标题</p>
+        </div>
+        <div class="modal-body">
+          <p>hhhh，很开心再次见到你~(￣▽￣)~*</p>
+          <div class="wrapper">
+            <button class="close" id="close-btn2">关闭</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>尾注</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    var model = (function () {
+        var showModal = function (elem) {
+            return function (event) {
+                elem.style.display = 'block';
+            }
+        };
+        var hideModal = function (elem) {
+            return function (event) {
+                elem.style.display = 'none';
+            }
+        };
+        var handle = function (clickBtn, modal, closeBtn) {
+            var clickBtn = document.getElementById(clickBtn);
+            var modal = document.getElementById(modal);
+            var closeBtn = document.getElementById(closeBtn);
+            clickBtn.addEventListener('click', showModal(modal));
+            closeBtn.addEventListener('click', hideModal(modal));
+        };
+        handle('btn1', 'modal1', 'close-btn1');
+        handle('btn2', 'modal2', 'close-btn2');
+    })();
+</script>
+</body>
+</html>
