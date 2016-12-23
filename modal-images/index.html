@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片大图</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img class="trigger" src="images/views.jpg" alt="Photo of Trolltunga, Norway" width="300" height="200">
+<div class="modal" id="img-modal1">
+  <span class="close">&times;</span>
+  <img src="images/views.jpg" class="modal-content" id="img1">
+  <div id="caption">Trolltunga, Norway</div>
+</div>
+<script>
+    var trigger = document.getElementsByClassName('trigger')[0];
+    var modal = document.getElementById('img-modal1');
+    var close = document.getElementsByClassName('close')[0];
+    trigger.addEventListener('click', function (event) {
+        modal.style.display = 'block';
+    });
+    close.addEventListener('click', function (event) {
+        modal.style.display = 'none';
+    });
+</script>
+</body>
+</html>
