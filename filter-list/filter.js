@@ -20,6 +20,9 @@ var filter = function () {
                         // no match in the header block
                         header.style.display = 'none';
                     }
+                    else {
+                        header.style.display = 'block';
+                    }
                 }
                 header = a;
                 matched = false;
@@ -31,6 +34,15 @@ var filter = function () {
             else {
                 li[i].style.display = 'block';
                 matched = true;
+            }
+        }
+        // handle the last header block
+        if(header !== null) {
+            if(!matched) {
+                header.style.display = 'none';
+            }
+            else {
+                header.style.display = 'block';
             }
         }
     });
