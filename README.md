@@ -1,6 +1,7 @@
 # 样例小集合
 
 这个项目用来存放平时写的各个 demo，目录如下（按时间排序）：
+- [进度条](http://leonard-peng.github.io/demos/progress-bar/index.html)
 - [搜索列表](http://leonard-peng.github.io/demos/filter-list/)
 - [图片大图](http://leonard-peng.github.io/demos/modal-images/)
 - [弹窗](http://leonard-peng.github.io/demos/modal-box/)

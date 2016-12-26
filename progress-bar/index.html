@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>进度条</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="test-progress">
+  <div id="test-bar"></div>
+  <span id="test-bar-text"></span>
+</div>
+<button id="bar-trigger">Click</button>
+</body>
+<script>
+    var progressBar = function (barName, textName) {
+        var bar = document.getElementById(barName);
+        var text = document.getElementById(textName);
+        var progress = 0;
+
+        var update = function () {
+            if (progress >= 100) return;
+            progress += 1;
+            bar.style.width = progress + '%';
+            text.innerText = progress + '%';
+        };
+        var go = function () {
+            update();
+            if (progress < 100) {
+                console.log('h');
+                setTimeout(go, 50);
+            }
+        };
+
+        return {
+            go: go
+        }
+    };
+    var testBar = progressBar('test-bar', 'test-bar-text');
+    var trigger = document.getElementById('bar-trigger');
+    trigger.addEventListener('click', testBar.go);
+</script>
+</html>
