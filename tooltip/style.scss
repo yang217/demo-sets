@@ -1,0 +1,113 @@
+.tooltip {
+  position: relative;
+  //display: inline-block;
+  border-bottom: 1px dotted black;
+  width: 180px;
+  text-align: center;
+  margin: 100px auto;
+
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;;
+  padding: 5px 0;
+  border-radius: 6px;
+  // fade in animation
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+// show tooltip when hover over
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+// up
+.up {
+  // position the tooltip text
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+// up tooltip arrow
+.up::after {
+  content: ""; // lack this ::after will not show
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+// down
+.down {
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+// down tooltip arrow
+.down::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+// left
+.left {
+  width: 100px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  right: 105%;
+  top: -10px;
+}
+
+// left tooltip arrow
+.left::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 50%;
+  margin-bottom: -6px;
+  border: 6px solid;
+  border-color: transparent transparent transparent #555;
+}
+
+// right
+.right {
+  width: 100px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  left: 105%;
+  top: -10px;
+}
+
+// right tooltip arrow
+.right::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  right: 100%;
+  bottom: 50%;
+  margin-bottom: -6px;
+  border: 6px solid;
+  border-color: transparent #555 transparent transparent;
+}
