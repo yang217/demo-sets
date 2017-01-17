@@ -11,11 +11,14 @@ let toDoList = (() => {
     addBtn = document.getElementById(addBtnId);
     list = document.getElementById(listId);
     addBtn.addEventListener('click', addTask);
-    for (let task of list.children) {
+    const length = list.children.length;
+    for (let i = 0; i < length; i++) {
       // listen click event on close button
+      let task = list.children[i];
       task.firstElementChild.addEventListener('click', removeTask);
       // listen click event on task to tick off
       task.addEventListener('click', tickTask);
+      console.log('fuck!');
     }
 };
   let addTask = (event) => {

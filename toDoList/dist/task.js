@@ -13,32 +13,14 @@ var toDoList = function () {
     addBtn = document.getElementById(addBtnId);
     list = document.getElementById(listId);
     addBtn.addEventListener('click', addTask);
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = list.children[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var task = _step.value;
-
-        // listen click event on close button
-        task.firstElementChild.addEventListener('click', removeTask);
-        // listen click event on task to tick off
-        task.addEventListener('click', tickTask);
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
+    var length = list.children.length;
+    for (var i = 0; i < length; i++) {
+      // listen click event on close button
+      var task = list.children[i];
+      task.firstElementChild.addEventListener('click', removeTask);
+      // listen click event on task to tick off
+      task.addEventListener('click', tickTask);
+      console.log('fuck!');
     }
   };
   var addTask = function addTask(event) {
