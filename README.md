@@ -1,6 +1,7 @@
 # 样例小集合
 
 这个项目用来存放平时写的各个 demo，目录如下（按时间排序）：
+- [页脚分页跳转](http://leonard-peng.github.io/demos/pagination/)
 - [头像小片](http://leonard-peng.github.io/demos/contact-chip/)
 - [loader](http://leonard-peng.github.io/demos/loader/index.html)
 - [首页大图](http://leonard-peng.github.io/demos/full-page/)

@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline;
+  }
+  a {
+    float: left; // eliminate the space of ' '
+    text-decoration: none;
+    color: black;
+    padding: 12px 16px;
+    font-size: 16px;
+    transition: .3s;
+    &:hover:not(.active) {
+      background-color: #eee;
+    }
+    &.active {
+      background-color: #4caf50;
+      color: white;
+    }
+  }
+}
