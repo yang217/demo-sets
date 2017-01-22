@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Alerts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="alert danger"><strong>Danger!</strong> Indicates a dangerous or potentially negative action.<span
+    class="close-btn">&times;</span></div>
+  <div class="alert warning"><strong>Wainging!</strong> Indicates a warning that might need attention.<span
+    class="close-btn">&times;</span></div>
+  <div class="alert info"><strong>Info!</strong> Indicates a neutral informative change or action.<span
+    class="close-btn">&times;</span></div>
+  <div class="alert success"><strong>Success!</strong> Indicates a successful or positive action.<span
+    class="close-btn">&times;</span></div>
+</div>
+<script>
+  function hide(event) {
+    var parent = event.target.parentNode;
+    parent.style.opacity = '0';
+    setTimeout(function () {
+      parent.style.display = "none";
+    }, 600)
+  }
+  var btns = document.getElementsByClassName('close-btn');
+  var length = btns.length;
+  for (var i = 0; i < length; i++) {
+    btns[i].addEventListener('click', hide);
+  }
+</script>
+</body>
+</html>
