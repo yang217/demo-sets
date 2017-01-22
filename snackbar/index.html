@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Snackbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <button>Show Snackbar</button>
+</div>
+<div id="snackbar">Some text here...</div>
+<script>
+  var btn = document.getElementsByTagName('button')[0];
+  btn.addEventListener('click', function (event) {
+    var snackbar = document.getElementById('snackbar');
+    snackbar.className = 'show';
+    setTimeout(function () {
+      snackbar.className = '';
+    }, 3000);
+  })
+</script>
+</body>
+</html>
