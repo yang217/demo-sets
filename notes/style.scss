@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note {
+  width: 80%;
+  margin: auto;
+  padding: 1em 1.5em;
+  border-left: 0.5em solid;
+}
+
+.danger {
+  background-color: #ffdddd;
+  border-left-color: #f44336;
+}
+
+.warning {
+  background-color: #ffffcc;
+  border-left-color: #ffeb3b;
+}
+
+.info {
+  background-color: #e7f3fe;
+  border-left-color: #2196f3;
+}
+
+.success {
+  background-color: #ddffdd;
+  border-left-color: #4caf50;
+}
