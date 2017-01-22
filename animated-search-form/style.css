@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+input {
+  margin: auto;
+  width: 120px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  background: url("searchicon.png") no-repeat 10px 10px;
+  transition: width 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+input:focus {
+  width: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */
