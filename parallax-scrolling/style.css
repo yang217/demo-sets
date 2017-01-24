@@ -2,31 +2,25 @@ html, body {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
+  color: #777; }
 
 .parallax {
   position: relative;
   opacity: 0.65;
-  // create the parallax scrolling ffext
   background: no-repeat fixed center;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .bgimg1 {
   background-image: url("images/img_parallax1.jpg");
-  min-height: 100%;
-}
+  min-height: 100%; }
 
 .bgimg2 {
   background-image: url("images/img_parallax2.jpg");
-  min-height: 400px;
-}
+  min-height: 400px; }
 
 .bgimg3 {
   background-image: url("images/img_parallax3.jpg");
-  min-height: 400px;
-}
+  min-height: 400px; }
 
 .caption {
   position: absolute;
@@ -34,39 +28,31 @@ html, body {
   left: 0;
   right: 0;
   text-align: center;
-  color: white;
-}
+  color: white; }
 
 span.border {
   background-color: #111;
   padding: 18px;
   font-size: 25px;
-  letter-spacing: 10px;
-}
+  letter-spacing: 10px; }
 
-span.no-bgcolor{
-  background-color: transparent !important;
-}
+span.no-bgcolor {
+  background-color: transparent !important; }
 
 .content {
-  padding: 2em 3em;
-  h3 {
+  padding: 2em 3em; }
+  .content h3 {
     text-align: center;
     font-size: 2em;
-    font-weight: bolder;
-  }
-  p {
-    word-break: break-all;
-  }
-  &.dark {
+    font-weight: bolder; }
+  .content p {
+    word-break: break-all; }
+  .content.dark {
     background-color: #333;
-    color: white;
-  }
-}
+    color: white; }
 
 @media only screen and (max-device-width: 600px) {
   .parallax {
-    background-attachment: scroll; // fix not works for mobile
-  }
-}
+    background-attachment: scroll; } }
 
+/*# sourceMappingURL=style.css.map */
