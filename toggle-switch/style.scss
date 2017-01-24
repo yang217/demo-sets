@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.example-block {
+  max-width: 600px;
+  margin: auto;
+}
+
+.switch {
+  margin-top: 2em;
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+  input {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: background-color .4s;
+  }
+  .slider:before {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    content: '';
+    height: 26px;
+    width: 26px;
+    background-color: white;
+    transition: .4s
+  }
+  input:checked + .slider {
+    background-color: #07beea;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .round {
+    border-radius: 17px;
+  }
+  .round:before {
+    border-radius: 50%;
+  }
+}

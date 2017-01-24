@@ -1,6 +1,8 @@
 # 样例小集合
 
 这个项目用来存放平时写的各个 demo，目录如下（按时间排序）：
+- [响应式价格表](http://leonard-peng.github.io/demos/responsive-pricing-table/)
+- [动态开关](http://leonard-peng.github.io/demos/toggle-switch/)
 - [Snackbar 提醒](http://leonard-peng.github.io/demos/snackbar/)
 - [提醒框](http://leonard-peng.github.io/demos/notes/)
 - [警示条](http://leonard-peng.github.io/demos/alerts/)
