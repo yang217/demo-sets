@@ -19,9 +19,6 @@ html, body {
     width: 119px;
     height: 40px;
     display: block;
-    @media (min-width: 768px) {
-      padding-top: 5px;
-    }
   }
   .navbar-nav > li > a {
     font-size: 1.4rem;
@@ -52,12 +49,6 @@ html, body {
   }
 }
 
-@media (max-width: 768px) {
-  .red-btn {
-    background-color: $primary-color;
-  }
-}
-
 .affix {
   background-color: white;
   .o-logo {
@@ -79,13 +70,6 @@ html, body {
   overflow: hidden;
 }
 
-@media (min-width: 992px) {
-  .c-hero {
-    height: 600px;
-    overflow: hidden;
-  }
-}
-
 // slogan
 .slogan-container {
   // to cover the video
@@ -104,11 +88,6 @@ html, body {
       font-size: 4.6rem;
       font-weight: 300;
       color: #fff;
-    }
-    @media (max-width: 750px) {
-      span {
-        font-size: 2rem;
-      }
     }
   }
 }
@@ -168,24 +147,6 @@ html, body {
       font-size: 1.6rem;
     }
   }
-  @media (min-width: 970px) {
-    .half-circle-box {
-      z-index: 5;
-      position: relative; // to make z-index work
-      padding: 0 10px;
-    }
-    .half-circle-box:before {
-      z-index: -2;
-      content: '';
-      width: 180px;
-      height: 90px;
-      background-color: #fff;
-      position: absolute;
-      top: -30px;
-      left: calc(50% - 90px);
-      border-radius: 100px 100px 0 0;
-    }
-  }
 }
 
 //testimonial
@@ -241,25 +202,6 @@ html, body {
       right: 30px;
       width: 40px;
     }
-    @media (min-width: 970px) {
-      min-height: 250px;
-      &:before, &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        z-index: -1;
-        height: 50%;
-        width: 100%;
-      }
-      &:before {
-        top: 0;
-        transform: skew(15deg, 0);
-      }
-      &:after {
-        bottom: 0;
-        transform: skew(-15deg, 0);
-      }
-    }
   }
 }
 
@@ -286,15 +228,6 @@ html, body {
   .fa-inverse {
     color: #afafaf;
   }
-  @media (max-width: 768px){
-    .social-link {
-      display: none;
-    }
-    li {
-      display: inline-block;
-    }
-  }
-
 }
 
 .copy-info{
@@ -349,6 +282,69 @@ html, body {
     }
     .faq, a {
       color: $primary-color;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .red-btn {
+    background-color: $primary-color;
+  }
+  .slogan-container .slogan span {
+    font-size: 2rem;
+  }
+  .social-link {
+    display: none;
+  }
+  .footer-info li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .o-logo {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 970px) {
+  .c-hero {
+    height: 600px;
+    overflow: hidden;
+  }
+  .half-circle-box {
+    z-index: 5;
+    position: relative; // to make z-index work
+    padding: 0 10px;
+  }
+  .half-circle-box:before {
+    z-index: -2;
+    content: '';
+    width: 180px;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 90px);
+    border-radius: 100px 100px 0 0;
+  }
+  .how-it-works {
+    min-height: 250px;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      height: 50%;
+      width: 100%;
+    }
+    &:before {
+      top: 0;
+      transform: skew(15deg, 0);
+    }
+    &:after {
+      bottom: 0;
+      transform: skew(-15deg, 0);
     }
   }
 }

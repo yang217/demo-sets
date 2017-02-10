@@ -14,9 +14,6 @@ html, body {
     width: 119px;
     height: 40px;
     display: block; }
-    @media (min-width: 768px) {
-      .main-nav .o-logo {
-        padding-top: 5px; } }
   .main-nav .navbar-nav > li > a {
     font-size: 1.4rem;
     font-weight: 300;
@@ -38,9 +35,6 @@ html, body {
   .main-nav .icon-bar {
     background-color: #ddd !important; }
 
-@media (max-width: 768px) {
-  .red-btn {
-    background-color: #ef4d4d; } }
 .affix {
   background-color: white; }
   .affix .o-logo {
@@ -56,10 +50,6 @@ html, body {
   height: 40rem;
   overflow: hidden; }
 
-@media (min-width: 992px) {
-  .c-hero {
-    height: 600px;
-    overflow: hidden; } }
 .slogan-container {
   position: absolute;
   top: 0;
@@ -76,9 +66,6 @@ html, body {
       font-size: 4.6rem;
       font-weight: 300;
       color: #fff; }
-    @media (max-width: 750px) {
-      .slogan-container .slogan span {
-        font-size: 2rem; } }
 
 .start-btn {
   min-width: 180px;
@@ -125,21 +112,6 @@ html, body {
       font-weight: 300; }
     .advantages-section .card p {
       font-size: 1.6rem; }
-  @media (min-width: 970px) {
-    .advantages-section .half-circle-box {
-      z-index: 5;
-      position: relative;
-      padding: 0 10px; }
-    .advantages-section .half-circle-box:before {
-      z-index: -2;
-      content: '';
-      width: 180px;
-      height: 90px;
-      background-color: #fff;
-      position: absolute;
-      top: -30px;
-      left: calc(50% - 90px);
-      border-radius: 100px 100px 0 0; } }
 
 .testimonial {
   background: #828384 url("images/testimonial.jpg") 0 28%;
@@ -183,22 +155,6 @@ html, body {
       top: 10px;
       right: 30px;
       width: 40px; }
-    @media (min-width: 970px) {
-      .how-it-works .how-it-works-item {
-        min-height: 250px; }
-        .how-it-works .how-it-works-item:before, .how-it-works .how-it-works-item:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          z-index: -1;
-          height: 50%;
-          width: 100%; }
-        .how-it-works .how-it-works-item:before {
-          top: 0;
-          transform: skew(15deg, 0); }
-        .how-it-works .how-it-works-item:after {
-          bottom: 0;
-          transform: skew(-15deg, 0); } }
 
 .footer-info {
   background-color: #5d5d5d;
@@ -217,11 +173,6 @@ html, body {
     color: #6a6a6a; }
   .footer-info .fa-inverse {
     color: #afafaf; }
-  @media (max-width: 768px) {
-    .footer-info .social-link {
-      display: none; }
-    .footer-info li {
-      display: inline-block; } }
 
 .copy-info {
   background-color: #444;
@@ -268,5 +219,77 @@ html, body {
       font-weight: 300; }
     .contact-us-complex main .faq, .contact-us-complex main a {
       color: #ef4d4d; }
+
+@media (max-width: 768px) {
+  .red-btn {
+    background-color: #ef4d4d;
+  }
+
+  .slogan-container .slogan span {
+    font-size: 2rem;
+  }
+
+  .social-link {
+    display: none;
+  }
+
+  .footer-info li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .o-logo {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 970px) {
+  .c-hero {
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .half-circle-box {
+    z-index: 5;
+    position: relative;
+    padding: 0 10px;
+  }
+
+  .half-circle-box:before {
+    z-index: -2;
+    content: '';
+    width: 180px;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 90px);
+    border-radius: 100px 100px 0 0;
+  }
+
+  .how-it-works {
+    min-height: 250px;
+  }
+
+  .how-it-works:before, .how-it-works:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+  }
+
+  .how-it-works:before {
+    top: 0;
+    transform: skew(15deg, 0);
+  }
+
+  .how-it-works:after {
+    bottom: 0;
+    transform: skew(-15deg, 0);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
