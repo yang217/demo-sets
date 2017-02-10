@@ -46,18 +46,16 @@ html, body {
     color: #fff; }
 
 .c-hero {
-  position: relative;
   height: 40rem;
-  overflow: hidden; }
+  background-size: contain;
+  background: url("images/homepage-hero.jpg") no-repeat;
+}
 
 .slogan-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
   background-color: transparent;
-  display: flex; }
+  display: flex;
+  height: 100%;
+}
   .slogan-container .slogan {
     margin: auto;
     text-align: center; }
@@ -237,13 +235,11 @@ html, body {
     display: inline-block;
   }
 }
-
 @media (min-width: 768px) {
   .o-logo {
     padding-top: 5px;
   }
 }
-
 @media (min-width: 970px) {
   .c-hero {
     height: 600px;
@@ -268,25 +264,27 @@ html, body {
     border-radius: 100px 100px 0 0;
   }
 
-  .how-it-works {
+  .how-it-works-item {
     min-height: 250px;
+    background-color: transparent !important;
   }
 
-  .how-it-works:before, .how-it-works:after {
+  .how-it-works-item:before, .how-it-works-item:after {
     content: '';
     position: absolute;
     left: 0;
     z-index: -1;
     height: 50%;
     width: 100%;
+    background-color: #f1f1f1;
   }
 
-  .how-it-works:before {
+  .how-it-works-item:before {
     top: 0;
     transform: skew(15deg, 0);
   }
 
-  .how-it-works:after {
+  .how-it-works-item:after {
     bottom: 0;
     transform: skew(-15deg, 0);
   }

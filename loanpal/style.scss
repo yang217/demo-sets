@@ -63,23 +63,18 @@ html, body {
   }
 }
 
-// video
+// imaged
 .c-hero {
-  position: relative;
   height: 40rem;
-  overflow: hidden;
+  background-size: contain;
+  background: url("images/homepage-hero.jpg") no-repeat;
 }
 
 // slogan
 .slogan-container {
-  // to cover the video
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
   background-color: transparent;
   display: flex;
+  height: 100%;
   .slogan {
     margin: auto;
     text-align: center;
@@ -328,8 +323,9 @@ html, body {
     left: calc(50% - 90px);
     border-radius: 100px 100px 0 0;
   }
-  .how-it-works {
+  .how-it-works-item {
     min-height: 250px;
+    background-color: transparent !important;
     &:before, &:after {
       content: '';
       position: absolute;
@@ -337,6 +333,7 @@ html, body {
       z-index: -1;
       height: 50%;
       width: 100%;
+      background-color: #f1f1f1;
     }
     &:before {
       top: 0;
